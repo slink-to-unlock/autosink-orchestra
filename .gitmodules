@@ -1,0 +1,18 @@
+[submodule "autosink-model-evaluation"]
+	path = autosink-model-evaluation
+	url = https://github.com/slink-to-unlock/autosink-model-evaluation.git
+[submodule "autosink-model-validation"]
+	path = autosink-model-validation
+	url = https://github.com/slink-to-unlock/autosink-model-validation.git
+[submodule "autosink-model-training"]
+	path = autosink-model-training
+	url = https://github.com/slink-to-unlock/autosink-model-training.git
+[submodule "autosink-data-preparation"]
+	path = autosink-data-preparation
+	url = https://github.com/slink-to-unlock/autosink-data-preparation.git
+[submodule "autosink-data-validation"]
+	path = autosink-data-validation
+	url = https://github.com/slink-to-unlock/autosink-data-validation.git
+[submodule "autosink-data-extraction"]
+	path = autosink-data-extraction
+	url = https://github.com/slink-to-unlock/autosink-data-extraction.git
