@@ -2,7 +2,7 @@
 
 [🇬🇧]() | [🇰🇷]() | [🇨🇳]()
 
-这个存储库用于构建集成开发环境。
+This repository is used to build an integrated development environment.
 
 ```bash
 git clone --recursive https://github.com/slink-to-unlock/autosink-orchestra.git
