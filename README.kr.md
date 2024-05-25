@@ -1,6 +1,6 @@
 # autosink-orchestra
 
-[🇬🇧]() | [🇰🇷]() | [🇨🇳]()
+[🇬🇧](README.md) | [🇰🇷](README.kr.md) | [🇨🇳](README.zh-CN.md)
 
 이 저장소는 통합된 개발 환경을 구축하기 위해 사용됩니다.
 
