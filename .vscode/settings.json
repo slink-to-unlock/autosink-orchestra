@@ -1,0 +1,16 @@
+{
+    "[python]": {
+        "editor.formatOnSaveMode": "file",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "eeyore.yapf",
+        "editor.formatOnType": false
+    },
+    "python.analysis.extraPaths": [
+        "autosink-data-extraction",
+        "autosink-data-preparation",
+        "autosink-data-validation",
+        "autosink-model-evaluation",
+        "autosink-model-training",
+        "autosink-model-validation",
+    ]
+}
