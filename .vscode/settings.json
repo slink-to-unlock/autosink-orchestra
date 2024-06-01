@@ -12,5 +12,6 @@
         "autosink-model-evaluation",
         "autosink-model-training",
         "autosink-model-validation",
-    ]
+    ],
+    "docwriter.style": "Google"
 }
