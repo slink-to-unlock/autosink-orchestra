@@ -6,6 +6,7 @@
         "editor.formatOnType": false
     },
     "python.analysis.extraPaths": [
+        "autosink-data-elt",
         "autosink-data-extraction",
         "autosink-data-preparation",
         "autosink-data-validation",

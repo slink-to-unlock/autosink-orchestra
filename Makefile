@@ -2,6 +2,9 @@ install-base:
 	python3 -m pip install --upgrade pip
 	python3 -m pip install flit
 
+install-data-elt: install-base
+	# cd ./autosink-data-elt && flit install --symlink && cd ..
+
 install-data-extraction: install-base
 	# NOTE: 현재는 Data Extraction step 을 고려하지 않습니다. 이 과정은 Google Drive + Google COLAB 에서 실행됩니다.
 	# cd ./autosink-data-extraction && flit install --symlink && cd ..
@@ -21,7 +24,7 @@ install-model-training: install-base
 install-model-validation: install-base
 	cd ./autosink-model-validation && flit install --symlink && cd ..
 
-install: install-data-extraction install-data-preparation install-data-validation install-model-evaluation install-model-training install-model-validation
+install: install-data-elt install-data-extraction install-data-preparation install-data-validation install-model-evaluation install-model-training install-model-validation
 
 publish-base:
 	python3 -m pip install --upgrade pip
@@ -30,6 +33,9 @@ publish-base:
 publish-data-extraction: publish-base
 	# NOTE: 현재는 Data Extraction step 을 고려하지 않습니다. 이 과정은 Google Drive + Google COLAB 에서 실행됩니다.
 	# cd ./autosink-data-extraction && make publish && cd ..
+
+publish-data-elt: publish-base
+	cd ./autosink-data-elt && make publish && cd ..
 
 publish-data-preparation: publish-base
 	cd ./autosink-data-preparation && make publish && cd ..
