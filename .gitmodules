@@ -25,3 +25,6 @@
 [submodule "autosink-data-elt"]
 	path = autosink-data-elt
 	url = https://github.com/slink-to-unlock/autosink-data-elt.git
+[submodule "sparse-to-dense"]
+	path = sparse-to-dense
+	url = https://github.com/slink-to-unlock/sparse-to-dense.git

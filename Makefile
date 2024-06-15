@@ -24,7 +24,10 @@ install-model-training: install-base
 install-model-validation: install-base
 	cd ./autosink-model-validation && flit install --symlink && cd ..
 
-install: install-data-elt install-data-extraction install-data-preparation install-data-validation install-model-evaluation install-model-training install-model-validation
+install-sparse-to-dense: install-base
+	cd ./sparse-to-dense && flit install --symlink && cd ..
+
+install: install-data-elt install-data-extraction install-data-preparation install-data-validation install-model-evaluation install-model-training install-model-validation install-sparse-to-dense
 
 publish-base:
 	python3 -m pip install --upgrade pip
@@ -52,4 +55,7 @@ publish-model-training: publish-base
 publish-model-validation: publish-base
 	cd ./autosink-model-validation && make publish && cd ..
 
-publish: publish-data-extraction publish-data-preparation publish-data-validation publish-model-evaluation publish-model-training publish-model-validation
+publish-sparse-to-dense: publish-base
+	cd ./sparse-to-dense && make publish && cd ..
+
+publish: publish-data-extraction publish-data-preparation publish-data-validation publish-model-evaluation publish-model-training publish-model-validation publish-sparse-to-dense
