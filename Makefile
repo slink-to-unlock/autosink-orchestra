@@ -3,7 +3,7 @@ install-base:
 	python3 -m pip install flit
 
 install-data-elt: install-base
-	# cd ./autosink-data-elt && flit install --symlink && cd ..
+	cd ./autosink-data-elt && flit install --symlink && cd ..
 
 install-data-extraction: install-base
 	# NOTE: 현재는 Data Extraction step 을 고려하지 않습니다. 이 과정은 Google Drive + Google COLAB 에서 실행됩니다.
@@ -25,7 +25,7 @@ install-model-validation: install-base
 	cd ./autosink-model-validation && flit install --symlink && cd ..
 
 install-sparse-to-dense: install-base
-	cd ./sparse-to-dense && flit install --symlink && cd ..
+	cd ./sparse-to-dense && flit install --only-deps && cd ..
 
 install: install-data-elt install-data-extraction install-data-preparation install-data-validation install-model-evaluation install-model-training install-model-validation install-sparse-to-dense
 
@@ -33,12 +33,12 @@ publish-base:
 	python3 -m pip install --upgrade pip
 	python3 -m pip install flit
 
+publish-data-elt: publish-base
+	cd ./autosink-data-elt && make publish && cd ..
+
 publish-data-extraction: publish-base
 	# NOTE: 현재는 Data Extraction step 을 고려하지 않습니다. 이 과정은 Google Drive + Google COLAB 에서 실행됩니다.
 	# cd ./autosink-data-extraction && make publish && cd ..
-
-publish-data-elt: publish-base
-	cd ./autosink-data-elt && make publish && cd ..
 
 publish-data-preparation: publish-base
 	cd ./autosink-data-preparation && make publish && cd ..
@@ -58,4 +58,4 @@ publish-model-validation: publish-base
 publish-sparse-to-dense: publish-base
 	cd ./sparse-to-dense && make publish && cd ..
 
-publish: publish-data-extraction publish-data-preparation publish-data-validation publish-model-evaluation publish-model-training publish-model-validation publish-sparse-to-dense
+publish: publish-data-elt publish-data-extraction publish-data-preparation publish-data-validation publish-model-evaluation publish-model-training publish-model-validation publish-sparse-to-dense
