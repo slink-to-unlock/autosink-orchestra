@@ -15,7 +15,6 @@ classifiers = [
 ]
 requires-python = ">=3.9"
 dependencies = [
-    # "autosink-data-extraction",
     "autosink-data-preparation",
     "autosink-data-validation",
     "autosink-model-evaluation",

@@ -18,10 +18,6 @@
 	path = autosink-data-validation
 	url = https://github.com/slink-to-unlock/autosink-data-validation.git
 	branch = main
-[submodule "autosink-data-extraction"]
-	path = autosink-data-extraction
-	url = https://github.com/slink-to-unlock/autosink-data-extraction.git
-	branch = main
 [submodule "autosink-data-elt"]
 	path = autosink-data-elt
 	url = https://github.com/slink-to-unlock/autosink-data-elt.git
