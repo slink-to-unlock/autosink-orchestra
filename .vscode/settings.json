@@ -13,6 +13,7 @@
         "autosink-model-evaluation",
         "autosink-model-training",
         "autosink-model-validation",
+        "sparse-to-dense",
     ],
     "docwriter.style": "Google"
 }
