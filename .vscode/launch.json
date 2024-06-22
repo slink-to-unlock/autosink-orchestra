@@ -1,0 +1,15 @@
+{
+    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+    // 기존 특성에 대한 설명을 보려면 가리킵니다.
+    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "레이블러 웹앱 실행",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "sparse_to_dense.cli.web",
+            "args": ["--port", "8502", "--workspace_path", "volume/data-lake/extract", "--feature_store_path", "volume/feature-store/v5"]
+        }
+    ]
+}
