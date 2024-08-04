@@ -86,7 +86,21 @@
         case_root = 'path to case_validation_dataset'
         print('case folder root:', case_root)
         ```
-        
+
+<table>
+<thead align="center">
+  <tr>
+    <th>재학습 전</th>
+    <th>재학습 후</th>
+  </tr>
+</thead>
+<tbody align="center">
+  <tr>
+    <td><img src="https://github.com/slink-to-unlock/.github/blob/main/demo-before-retraining.gif?raw=true"></td></th>
+    <td><img src="https://github.com/slink-to-unlock/.github/blob/main/demo-after-retraining.gif?raw=true"></td>
+  </tr>
+</tbody>
+</table>
 
 ## 컨트리뷰션
 
